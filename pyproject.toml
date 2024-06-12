@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "printbits"
+version = "0.1.0"
+dependencies = [
+    "pillow~=10.3.0",
+    "reedsolo~=1.7.0",
+]
+authors = [
+    { name="Levin Ma", email="llmar1000000@gmail.com" },
+]
+description = "A small commandline utility to encode (or decode) files into printable images with error correction."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+]
+keywords = ["print", "bits", "printbits", "printable", "image", "error correction", "commandline"]
+
+[project.scripts]
+printbits = "printbits:main_cli"
+
+[project.urls]
+Homepage = "https://github.com/appleplectic/printbits"
+Repository = "https://github.com/appleplectic/printbits"
+Issues = "https://github.com/appleplectic/printbits/issues"
